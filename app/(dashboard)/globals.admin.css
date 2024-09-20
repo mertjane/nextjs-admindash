@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sidebar {
+    @apply relative overflow-hidden transition-transform duration-300 ease-in-out bg-neutral-50;
+    transform: translateX(0);
+    width: 16rem; /* Replace with the actual width you need */
+    height: 100%;
+  }
+
+  .content-open {
+    @apply flex-grow transition-all duration-300 p-4;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-closed {
+    @apply flex-grow transition-all duration-300 p-4;
+    margin-left: -165px;
+    height: 100%;
+
+    display: flex;
+    width: 100%;
+  }
+
+  .hr {
+    @apply mx-auto w-full mt-8 mb-4;
+  }
+
+  .hr.hr-open {
+    @apply mx-auto w-full;
+  }
+
+  .hr.hr-closed {
+    @apply w-10 border-b border-neutral-200;
+    margin-left: 162px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+    @apply border-r border-neutral-300;
+  }
+
+  .sidebar.closed {
+    transform: translateX(-68%);
+    @apply border-r border-neutral-300;
+  }
+
+  .siderbar-list-item.list-opened {
+    @apply relative pl-2 py-3 text-sm cursor-pointer flex items-center gap-4 hover:bg-neutral-200 rounded-md;
+    color: #5a5959;
+  }
+
+  .siderbar-list-item.list-closed {
+    @apply relative mb-6;
+    color: #5a5959;
+  }
+
+  .sidebar-icons {
+    @apply mx-auto hover:bg-neutral-200 sm:relative hidden sm:block;
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+    color: #5a5959;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .responsive-setting-container {
+    @apply h-max mx-auto bg-white rounded-lg shadow p-8 px-10;
+  }
+
+  .table-head {
+    @apply p-2 text-start border border-neutral-200 text-slate-800 font-semibold md:text-sm box-border;
+  }
+
+  .table-body {
+    @apply p-2 text-start border border-neutral-200 text-slate-800 font-normal md:text-sm box-border;
+  }
+
+  .responsive-table-container {
+    @apply w-full border shadow-sm rounded-xl bg-neutral-50 relative overflow-hidden;
+  }
+
+  .calendar-container {
+    @apply w-full border shadow-sm rounded-xl bg-neutral-50 relative overflow-hidden;
+  }
+
+  @media (max-width: 640px) {
+    .sidebar,
+    .sidebar.closed {
+      transform: translateX(-100%);
+    }
+
+    .content-open {
+      @apply flex-grow transition-all duration-300 overflow-hidden;
+    }
+
+    .content-closed {
+      @apply flex-grow transition-all duration-300 overflow-hidden;
+
+      margin-left: -256px;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    .responsive-table-container {
+      @apply overflow-x-scroll border border-neutral-200 shadow-sm rounded-xl bg-neutral-50;
+    }
+
+    .responsive-setting-container {
+      @apply h-max w-screen mx-auto bg-white rounded-lg shadow p-8 md:px-10 px-4;
+    }
+  }
+}

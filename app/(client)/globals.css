@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  
+  @keyframes dropdown-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .nav-item {
+    @apply relative transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300;
+  }
+
+  /* FIXED NAVBAR STYLES */
+
+  .fixed-nav-link {
+    @apply cursor-pointer text-neutral-50 hover:text-neutral-300;
+  }
+
+  .nav-item-secondary:nth-child(1) {
+    opacity: 0;
+    animation: dropdown-fade-in 350ms forwards;
+    animation-delay: 100ms; /* Delay for the first result */
+  }
+  .nav-item-secondary:nth-child(2) {
+    opacity: 0;
+    animation: dropdown-fade-in 350ms forwards;
+    animation-delay: 200ms; /* Delay for the first result */
+  }
+  .nav-item-secondary:nth-child(3) {
+    opacity: 0;
+    animation: dropdown-fade-in 350ms forwards;
+    animation-delay: 300ms; /* Delay for the first result */
+  }
+  .nav-item-secondary:nth-child(4) {
+    opacity: 0;
+    animation: dropdown-fade-in 350ms forwards;
+    animation-delay: 400ms; /* Delay for the first result */
+  }
+  .nav-item-secondary {
+    @apply w-full h-16 flex flex-row items-center justify-start;
+  }
+  .nav-link {
+    @apply font-medium relative text-sm text-slate-600 after:content-[''] after:absolute after:left-0 after:top-6 after:bottom-0   after:transition-all after:duration-300;
+  }
+  .nav-link-secondary {
+    @apply h-full w-full text-xl font-semibold flex flex-row items-center justify-center px-4 duration-100 hover:text-slate-600;
+  }
+  .card-item {
+    @apply text-xl mx-12 my-4 cursor-pointer flex items-center justify-center transition-transform transform hover:scale-150 duration-300;
+  }
+  .input-item {
+    @apply dark:bg-slate-950 appearance-none border-2 rounded w-full py-3 px-4 dark:text-amber-50 leading-tight focus:outline-none focus:border-purple-500;
+  }
+  .text-area {
+    @apply dark:bg-slate-950 appearance-none border-2 rounded w-full h-60 py-3 px-4 dark:text-amber-50 leading-tight focus:outline-none focus:border-purple-500;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer base {
+  :root {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 199, 210, 254;
+    --color-text-inverted: 79, 70, 229;
+    --color-fill: 67, 56, 202;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 238, 242, 255;
+    --color-button-muted: 99, 102, 241;
+  }
+  .theme-swiss {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 254, 202, 202;
+    --color-text-inverted: 220, 38, 38;
+    --color-fill: 185, 28, 28;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 254, 242, 242;
+    --color-button-muted: 239, 68, 68;
+  }
+  .theme-neon {
+    --color-text-base: 17, 24, 2;
+    --color-text-muted: 47, 67, 6;
+    --color-text-inverted: 235, 250, 204;
+    --color-fill: 179, 255, 23;
+    --color-button-accent: 36, 52, 3;
+    --color-button-accent-hover: 55, 79, 5;
+    --color-button-muted: 212, 255, 122;
+  }
+
+  .group:hover .first-image {
+    transform: translateY(5%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .group:hover .second-image {
+    transform: translateX(13%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .second-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  .first-image {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .marquee-container {
+    @apply md:col-span-1 border row-span-2 shadow-sm col-span-2 md:h-full h-screen rounded-lg relative overflow-hidden;
+  }
+
+  .scroller1,
+  .scroller2,
+  .scroller3 {
+    @apply relative flex w-max h-10 flex-row gap-3;
+  }
+
+  .marquee-content1,
+  .marquee-content3 {
+    @apply flex;
+
+    width: fit-content;
+    animation: scroller1 20s linear infinite;
+    animation-play-state: paused;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .marquee-content2 {
+    @apply flex;
+
+    width: fit-content;
+    animation: scroller2 20s linear infinite;
+    animation-play-state: paused;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .marquee-container:hover .marquee-content1 {
+    animation-play-state: running;
+  }
+
+  .marquee-container:hover .marquee-content2 {
+    animation-play-state: running;
+  }
+  .marquee-container:hover .marquee-content3 {
+    animation-play-state: running;
+  }
+
+  .marquee-item {
+    @apply shadow-sm border border-gray-200 rounded-lg max-h-7 min-w-fit py-1 px-6 flex flex-row items-center justify-center gap-1;
+  }
+
+  @keyframes scroller1 {
+    from {
+      transform: translateX(0%); /* Start off-screen to the right */
+    }
+    to {
+      transform: translateX(-100%); /* Move to the left */
+    }
+  }
+
+  @keyframes scroller2 {
+    from {
+      transform: translateX(0%); /* Start off-screen to the right */
+    }
+    to {
+      transform: translateX(100%); /* Move to the left */
+    }
+  }
+
+  .typewriter {
+    @apply border border-gray-200 shadow-sm rounded-full w-full h-10 mt-4 flex items-center px-4;
+  }
+
+  .typewriter p {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin-left: 8px;
+  }
+
+  .parent:hover .typewriter p {
+    animation:
+      typing 2s steps(20, end),
+      blink-caret 0.75s step-end infinite;
+    width: 100%; /* Expand to full width when hovered */
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #0000;
+    }
+  }
+
+  .domain-txt {
+    @apply text-gray-400;
+    font-size: 11px;
+  }
+
+  .result-title {
+    font-size: 13px;
+    @apply text-gray-700;
+  }
+
+  .result-content {
+    font-size: 12px;
+    @apply text-gray-400;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .result1,
+  .result2,
+  .result3 {
+    @apply w-full h-auto flex flex-col px-5 py-3 gap-0.5 opacity-100;
+  }
+
+  .parent:hover .result1 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s; /* Delay for the first result */
+  }
+  .parent:hover .result2 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.7s; /* Delay for the first result */
+  }
+  .parent:hover .result3 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.9s; /* Delay for the first result */
+  }
+
+  .custom-container:hover .first-col {
+    transform: translateY(19%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-container:hover .second-col {
+    transform: translateY(-44%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-container-small:hover .first-col {
+    transform: translateY(19%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .custom-container-small:hover .second-col {
+    transform: translateY(-19%);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .first-col {
+    transition: transform 0.2s ease-in-out;
+  }
+  .second-col {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .fixed-navbar {
+    @apply hidden lg:flex max-w-4xl rounded-full bg-black pl-8 pr-2 py-2 fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300;
+  }
+}

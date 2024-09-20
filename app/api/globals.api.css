@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-focus:focus {
+    @apply placeholder-neutral-50;
+  }
+}

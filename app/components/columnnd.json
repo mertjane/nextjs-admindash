@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "text": "Manu is the man! He is the best front-end developer I have worked with. He took the requirements and quite literally ran with them. We are super happy with the result and product we got. He's very intelligent, experienced, friendly, and helpful. To anyone reading this - I can't recommend this Manu enough, your job will be done exceptionally well, and you will be delighted with the end result.",
+        "img": "/head3.webp",
+        "owner": "John Ferry",
+        "position": "President at TAC, CEO at Rogue"
+    },
+    {
+        "id": 2,
+        "text": "Manu was quick to respond, very professional, and delivered a website within a week. Very good job. Looking forward to collaborating again",
+        "img": "/head4.webp",
+        "owner": "Asriel Han",
+        "position": "Founder / CTO at Advex AI"
+    },
+    {
+        "id": 3,
+        "text": "The work that Manu did laid the foundation of online education that we provide today. The website he built for us is used by thousands of students every day. He took the requirements and built the best platform with his expertise without us worrying.",
+        "img": "/head5.webp",
+        "owner": "Jagvinder Kour",
+        "position": "Chairperson at Golden Bells Academy"
+    },
+    {
+        "id": 4,
+        "text": "His communication was top-notch, he met all deadlines, and his skills were reasonably strong. I enjoyed working with Manu and will likely have additional jobs for him in the future.",
+        "img": "/head6.webp",
+        "owner": "Trish Neece",
+        "position": "Startup Agency Owner"
+    }
+]

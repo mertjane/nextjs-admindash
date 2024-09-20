@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "text": "I've been working with Manu for a couple of months now and I can't express enough how impressed I am with his talent. Manu's JavaScript/React web UI programming skills are through the roof. He's helped take a boring website and made it highly dynamic and visually compelling. What amazes me is how fast he works and how easy it is to coordinate with him. He jumped right into an Astro framework project, and we have a streamlined workflow that provides him access to Figma, a GitHub repo, and a Slack channel. He's extremely responsive and communication is brief, efficient, and effective. If Manu says he can do something, rest assured he can, he will, and it will be awesome. I can't speak highly enough of Manu; if you're considering working with him, do it; you'll be glad you did.",
+        "img": "/head10.webp",
+        "owner": "Tony Pujals",
+        "position": "Founder at Fantastic Realms | Tech Lead at Google"
+    },
+    {
+        "id": 2,
+        "text": "Manu was such a pleasure to work with. Talented, communicative and fast. Highly recommend!",
+        "img": "/head11.webp",
+        "owner": "Jonathan Barshop",
+        "position": "Founder at Barshop Studios"
+    }
+]

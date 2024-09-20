@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "text": "Excellent communication and professionalism from the start and throughout. Happily and calmly accepted and entertained a few additional out-of-scope requests as well. Good open-minded approach to suggestions, ideas and feedback and a humble way to deal with differences in understanding. An excellent experience overall, we will certainly re-engage Manu for future requirements, can't wait to do another job together.",
+        "img": "/head7.webp",
+        "owner": "Henrik Söderlund",
+        "position": "CTO at Creme Digital"
+    },
+    {
+        "id": 2,
+        "text": "Manu is a genius. He is open-minded, curious and deeply invested in the projects he chooses to work on. He takes your vision and brings it to life -- and is a true partner in the process. He's brilliant!",
+        "img": "/head8.webp",
+        "owner": "Meru Gokhale",
+        "position": "Founder at Editorially"
+    },
+    {
+        "id": 3,
+        "text": "This service exceeded our expectations, since not only was the development technically flawless, but Manu and his team also acted as strategic partners by encouraging us to add a project page and testimonials. We are very happy with our decision to hire Manu.",
+        "img": "/head9.webp",
+        "owner": "Georg Weingartner",
+        "position": "CMO at Renderwork"
+    }
+]

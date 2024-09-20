@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "text": "I'd highly recommend working with Manu on a site redesign. We came to Manu with a basic website shell. Manu quickly took our rough concept and transformed it into a polished, user-friendly website. His design sense is impeccable, and he has a keen eye for detail. One of Manu's greatest strengths is his ability to adapt to the ever-changing needs of working in a fast-paced environment. As an early-stage start-up, we threw a lot of direction changes and rapid iterations his way. Manu took everything in stride, demonstrating excellent communication skills and a willingness to collaborate. He was patient with our feedback and always open to meeting and discussing new ideas, ensuring the final product aligned with our evolving vision. We had originally scoped our project with Manu to be a limited engagement for a few website pages. Manu went beyond our expectation, working quickly, comprehensively and across a larger scope than envisioned, so we expanded the engagement. I'd recommend Manu to any company, especially startups, looking for a talented and adaptable website developer.",
+        "img": "/head12.webp",
+        "owner": "Ray Thai",
+        "position": "Head of Product at Fireworks"
+    },
+    {
+        "id": 2,
+        "text": "Nice to work with Manu. He is very professional and has a good sense of design.",
+        "img": "/head13.webp",
+        "owner": "Christopher Walsh",
+        "position": "Director at Cool Air Solutions"
+    },
+    {
+        "id": 3,
+        "text": "Manu was great to work with. Understood the scope and quick turnaround. Would recommend.",
+        "img": "/head14.webp",
+        "owner": "Ivan Dwyer",
+        "position": "Client at Upwork"
+    }
+    
+]
